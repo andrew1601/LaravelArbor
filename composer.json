@@ -1,0 +1,34 @@
+{
+    "name": "andrew1601/laravel-arbor",
+    "description": "Adds Arbor SDK and GraphQL functionality to Laravel projects",
+    "type": "library",
+    "require": {
+        "illuminate/support": "^9.39",
+        "arbor-education/arbor-sdk-php": "dev-master",
+        "gmostafa/php-graphql-client": "^1.13"
+    },
+    "autoload": {
+        "psr-4": {
+            "Andrew1601\\LaravelArbor\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andrew Pope",
+            "email": "andrew@andrew-pope.co.uk"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/andrew1601/sis-sdk-php"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers" : [
+                "Andrew1601\\LaravelArbor\\ServiceProvider"
+            ]
+        }
+    }
+}
