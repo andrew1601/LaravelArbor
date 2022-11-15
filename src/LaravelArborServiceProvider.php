@@ -10,7 +10,7 @@ class LaravelArborServiceProvider extends ServiceProvider
 {
     public function boot() {
         $this->publishes([
-            __DIR__.'/../config/arbor.php' => \Illuminate\Support\ServiceProvider\config_path(),
+            __DIR__.'/../config/arbor.php' => config_path('arbor.php'),
         ]);
 
         // Now that the service container has been populated, configure the default gateway for the Arbor SDK.
