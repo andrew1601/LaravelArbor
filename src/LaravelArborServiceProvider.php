@@ -29,7 +29,7 @@ class LaravelArborServiceProvider extends ServiceProvider
         // multiple instances we can register it as a singleton and bind this
         // single instance into the service container for future use.
         $this->app->singleton(RestGateway::class, function ($app) {
-            return new RestGateway(config('arbor.url'), config('arbor.username'), config('arbor.password'), config('arbor.user_agent'));
+            return new RestGateway(config('arbor.url'), config('arbor.username'), config('arbor.password'), config('arbor.user_agent', 'Laravel Arbor'));
         });
 
         $this->app->singleton(ArborGraphQLClient::class, function () {
