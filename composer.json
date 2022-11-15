@@ -27,7 +27,7 @@
     "extra": {
         "laravel": {
             "providers" : [
-                "Andrew1601\\LaravelArbor\\ServiceProvider"
+                "Andrew1601\\LaravelArbor\\LaravelArborServiceProvider"
             ]
         }
     }
